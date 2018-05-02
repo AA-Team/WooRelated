@@ -1,0 +1,48 @@
+// Global HTML font size resets:
+$screen-xs-font			: px(12);
+$screen-sm-font			: px(12);
+$screen-md-font			: px(14);
+$screen-lg-font			: px(16);
+
+// Breakpoints:
+$screen-xs				: px(480);
+$screen-sm				: px(768);
+$screen-md				: px(992);
+$screen-lg				: px(1200);
+
+
+// Global Colors:
+$black					: #323232;
+$orange					: #f1713e;
+$stars					: #f5d91f;
+$grey					: #8e8e8e;
+$green					: #60d34a;
+$red					: #ff2c2c;
+$btn-green				: #9dc74b;
+$btn-grey				: #cfcfcf;
+$border					: #d8d8d8;
+$border-act				: #9dc74b;
+$pgn-grey				: #f6f6f6;
+
+// Font Families:
+$arimo					: 'Arimo', sans-serif;
+$mont					: 'Montserrat', sans-serif;
+$play					: 'Playfair Display', serif;
+
+// Font weights:
+$light					: 300;
+$normal					: 400;
+$medium					: 500;
+$semi-bold				: 600;
+$bold					: 700;
+$extra-bold				: 800;
+$ultra-bold				: 900;
+
+// Mixins
+@mixin transform($val1, $val2, $val3) {
+	transform: translate3d($val1,$val2,$val3);
+}
+
+@mixin transition($time) {
+	transition: opacity $time, transform $time;
+}
