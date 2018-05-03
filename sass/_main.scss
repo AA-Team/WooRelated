@@ -286,6 +286,7 @@
 /* Version 2 */
 .wr2 {
 	.wr-carousel {
+
 		.wr-product {
 			width: 459px;
 		}
@@ -471,9 +472,6 @@
 .wr6 {
 	.wr-product {
 		margin-right: 13px;
-		position: relative;
-		overflow: visible;
-		z-index: 100;
 
 		.wr-img {
 			height: 254px;
@@ -484,11 +482,50 @@
 		.wr-det {
 			display: none;
 			width: 223px;
-			background-color: #ffffff;
-			position: absolute;
-			top: 0;
-			left: 224px;
-			z-index: 100;
+
+			.wr-title {
+				opacity: 0.4;
+				@include transform(-200px, 0, 0);
+				@include transition(0.45s);
+			}
+
+			.wr-cat {
+				opacity: 0.4;
+				@include transform(-200px, 0, 0);
+				@include transition(0.55s);
+			}
+
+			.wr-rate {
+				opacity: 0.4;
+				@include transform(-200px, 0, 0);
+				@include transition(0.65s);
+			}
+
+			.wr-price {
+				display: inline-block;
+				opacity: 0.4;
+				@include transform(-200px, 0, 0);
+				@include transition(0.75s);
+			}
+
+			.wr-availability {
+				opacity: 0.4;
+				@include transform(-200px, 0, 0);
+				@include transition(0.85s);
+			}
+
+			.wr-checkout {
+				opacity: 0.4;
+				@include transform(-200px, 0, 0);
+				@include transition(0.95s);
+			}
+
+			&.wr-animate {
+				h2,	p, div,	span,	a {
+					transform: translate3d(0,0,0);
+					opacity: 1;
+				}
+			}
 
 			.wr-title {
 				margin-top: 1px;

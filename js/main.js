@@ -80,8 +80,8 @@ $(document).ready(function() {
 			hoverZone.removeClass('wr-active');
 			details.removeClass('wr-animate');
 			var self = $(this);
-			self.find( hoverZone ).addClass('wr-active').show('1000');
-			details.hide('1000');
+			self.find( hoverZone ).addClass('wr-active');
+			details.hide('slow');
 			self.find( details ).css('display', 'inline-block');
 			setTimeout(function(){
 				self.find( details ).addClass('wr-animate');
@@ -98,5 +98,8 @@ $(document).ready(function() {
 
 	// Call the showLeft function on Version 6
 	showLeft(v6Prod, v6Img, v6Det);
+
+	/******* Other JS here *******/
+	
 
 });
